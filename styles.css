@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-size: 36px;
+}
+
+body {
+    background-color: rgb(31, 29, 29);
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.result-container {
+    position: relative;
+    font-family: 'calcDigit';
+    max-width: 492px;
+    height: minmax(120px , auto);
+    left: 14px;
+    text-align: right;
+    background: linear-gradient(90deg, rgba(11,96,1,1) 0%, rgba(0,185,16,1) 50%, rgba(0,82,21,1) 100%);
+    color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+
+}
+
+
+
+.result-container div.value {
+    height: minmax(40px,auto);
+    font-size: 32px;
+    transition: 0.4s cubic-bezier(0,0,1,1);
+
+}
+
+.result-container div.result {
+    height: minmax(70px,auto);
+    font-size: 60px;
+    
+
+
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 508px;
+    width: 508px;
+    position: relative;
+    transition: 0.4s cubic-bezier(0,0,1,1);
+}
+
+
+
+label:active {
+    transform: translate(5px,5px);
+    transition-duration: 0.1s;
+    
+} 
+
+
+label,input {
+    background:#1d1d1d ;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+    height: 100px;
+    width: 125px;
+    transition: 0.4s cubic-bezier(0,0,1,1);
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    
+
+}
+
+
+label::after {
+    content: '';
+    background-color: rgb(99, 254, 99);
+    position: absolute;
+}
+
+
+label::after {
+    content: '';
+    background-color: rgb(88, 254, 113);
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+label::before {
+    content: '';
+    background-color: rgb(30, 186, 54);
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+}
+
+
+
