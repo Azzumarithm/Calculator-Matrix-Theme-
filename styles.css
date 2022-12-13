@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .result-container {
@@ -42,8 +43,6 @@ body {
 .result-container div.result {
     height: minmax(70px,auto);
     font-size: 60px;
-    
-
 
 }
 
@@ -110,6 +109,28 @@ label::before {
     height: 15px;
     width: 100%;
     transform: skewX(45deg);
+}
+
+
+p {
+    color: rgb(60, 255, 0);
+    font-size: 16px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+
+}
+
+.creation{
+    position: absolute;
+    top: 1%;
+    right:80%;
+    width: 300px;
 }
 
 
